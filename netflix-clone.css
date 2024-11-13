@@ -134,6 +134,11 @@ select{
     font-weight: 500;
     padding: 10px;
     margin-left: 10px;
+    transition: 1s;
+}
+.Get-Started:hover{
+    background-color: #b61204;
+    transition: 0.5s;
 }
 #input{
     background-color: black;
@@ -154,8 +159,15 @@ select{
 .Trending-now-image{
     width: 11.5rem;
     border-radius: 20px;
-    
+    transition: 1second;
+    cursor: pointer;
 }
+.Trending-now-image:hover{
+    transform: scale(1.06);
+    transition: 0.3s;
+    z-index: 2;
+}    
+
 .Images-container{
     display: flex;
     justify-content: center;
@@ -226,6 +238,13 @@ select{
     margin: auto 5rem;
     padding: 20px;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.question-container:hover{
+    background-color: #474642;
+    transition: 0.3s;
+    z-index: 2;
 }
 .question-text{
     font-size: 1.2rem;
