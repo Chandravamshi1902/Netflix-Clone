@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Netflix Clone">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="author" content="Chandra Vamshi">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="netflix-clone.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add" />
+</head>
+<body>
+    <div class="background-color">
+        <div class="navbar">
+            <img src="Images/Netflix_Logo.png" alt="netflix logo" class="netflix-logo">
+            <div class="translate">
+                <img src="Images/Translate_Icon-bg.png" class="translate-icon">
+                <select >
+                    <option value="english">English</option>
+                    <option value="hindi">हिंदी</option>
+                </select>
+            </div>
+            <button class="Sign-In">Sign In</button>
+        </div>
+        <div class="video-container">
+            <video autoplay loop muted playsinline id="video">
+                <source src="Videos/Netflix Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-overlay">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <p>Starts at ₹149. Cancel at any time.</p>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="email" placeholder="Email address" id="input">
+            <button class="Get-Started">Get Started</button>
+        </div>
+        <div class="trending-container">
+            <h1 class="trending-heading">Trending Now</h1>
+            <div class="Images-container">
+                <img src="Images/Strangerthings.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Moneyheist.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Dopatti.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/IC814.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Greatindiankapilshow.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Lucifer.webp" alt="strabger-things" class="Trending-now-image">
+            </div>
+        </div>
+        <div class="trending-container">
+            <h1 class="trending-heading">Only on Netflix</h1>
+            <div class="Images-container">
+                <img src="Images/SaripodhaSanivaram.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Devara.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Kalki.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Animal.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/GOAT.webp" alt="strabger-things" class="Trending-now-image">
+                <img src="Images/Maharaja.webp" alt="strabger-things" class="Trending-now-image">
+            </div>
+        </div>
+        <div class="join-container">
+            <h1 class="trending-heading">More reasons to join</h1>
+            <div class="card-flex">
+                <div class="card-container">
+                    <p class="card-para">Stories tailored to your taste</p>
+                    <img src="Images/Card-1.png" alt="strabger-things" class="card-image">
+                </div>
+                <div class="card-container">
+                    <p class="card-para">Cancel or switch plans anytime</p>
+                    <img src="Images/Card-2.png" alt="strabger-things" class="card-image">
+                </div>
+                <div class="card-container">
+                    <p class="card-para">A place just for kids</p>
+                    <img src="Images/Card-3.png" alt="strabger-things" class="card-image">
+                </div>
+                <div class="card-container">
+                    <p class="card-para">For your phone, tablet, laptop and TV</p>
+                    <img src="Images/Card-4.png" alt="strabger-things" class="card-image">
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="trending-heading">Frequently Asked Questions</h1>
+            <div class="question-container">
+                <p class="question-text start">What is Netflix?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="question-container">
+                <p class="question-text start">How much Netflix cost?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="question-container">
+                <p class="question-text start">Where can I watch?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="question-container">
+                <p class="question-text start">How do I cancel?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="question-container">
+                <p class="question-text start">What can I watch on Netflix?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+            <div class="question-container">
+                <p class="question-text start">Is Netflix good for kids?</p>
+                <img src="Images/plus.png" alt="plus-icon" class="plus-icon">
+            </div>
+        </div>
+        <div class="Get-started-container">
+            <button class="Get-started-end">Get Started</button>
+        </div>
+        <div class="footer-container">
+            <p class="call">Questions? Call <span class="number">000-800-919-1694</span></p>
+            <div>
+                <ol>
+                    <li>FAQ</li>
+                    <li>Help Centre</li>
+                    <li>Account</li>
+                    <li>Media Centre</li>
+                    <li>Investor Relations</li>
+                    <li>Jobs</li>
+                    <li>Ways to Watch</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy</li>
+                    <li>Cookie Preferences</li>
+                    <li>Corporate Information</li>
+                    <li>Contact Us</li>
+                    <li>Speed Test</li>
+                    <li>Legal Notices</li>
+                    <li>Only on Netflix</li>
+                    <li></li>
+                </ol>
+            </div>
+            <div class="translate footer-translate">
+                <img src="Images/Translate_Icon-bg.png" class="translate-icon">
+                <select >
+                    <option value="english">English</option>
+                    <option value="hindi">हिंदी</option>
+                </select>
+            </div>
+            <h1 class="footer-text">Netflix India</h1>
+            <p class="end">end</p>
+        </div>
+    </div>
+</body>
+</html>
